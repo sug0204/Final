@@ -1,0 +1,11 @@
+<v-text-field
+v-model="password"
+id="confirmpassword"
+label="Confirm-password"
+name="confirmpassword"
+prepend-icon="mdi-lock"
+v-bind:rules="rules.newpasswordrule"
+type="password"/>
+
+
+newpasswordrule:[(val) => val == newPassword.newpassword || "Need to be same",],
